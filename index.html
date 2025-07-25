@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Interactive Website</title>
-    <style>
-        button {
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-    </style>
+  <title>Black Myth: Wukong Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to My Interactive Site!</h1>
-    <button onclick="alert('Hello!')">Click Me</button>
-    <button id="changeTextBtn">Change Text</button>
-    <p id="demo">This text will change.</p>
+  <div class="container">
+    <!-- Progress Header -->
+    <div class="progress-section">
+      <h2>Overall Completion: <span id="overall-progress">0%</span></h2>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 0%"></div>
+      </div>
+    </div>
 
-    <script>
-        // Change text when button is clicked
-        document.getElementById("changeTextBtn").addEventListener("click", function() {
-            document.getElementById("demo").innerHTML = "Text changed! 🎉";
-        });
-    </script>
+    <!-- Item Tracker -->
+    <div class="checklist">
+      <h3><i class="fas fa-chess-rook"></i> Weapons</h3>
+      <ul id="weapons-list">
+        <!-- Filled by JS -->
+      </ul>
+    </div>
+
+    <!-- Steam Integration (Optional) -->
+    <button id="steam-login" class="steam-btn">
+      <img src="assets/steam-logo.png" alt="Steam"> Sync Achievements
+    </button>
+  </div>
+  <script src="js/app.js"></script>
 </body>
 </html>
