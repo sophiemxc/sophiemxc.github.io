@@ -7,27 +7,25 @@
 </head>
 <body>
   <div class="container">
-    <!-- Progress Header -->
+    <!-- Progress Bar -->
     <div class="progress-section">
-      <h2>Overall Completion: <span id="overall-progress">0%</span></h2>
+      <h2>Completion: <span id="overall-progress">0%</span></h2>
       <div class="progress-bar">
         <div class="progress-fill" style="width: 0%"></div>
       </div>
     </div>
 
-    <!-- Item Tracker -->
-    <div class="checklist">
-      <h3><i class="fas fa-chess-rook"></i> Weapons</h3>
-      <ul id="weapons-list">
-        <!-- Filled by JS -->
-      </ul>
+    <!-- Category Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" data-category="ARMOR">Armor</button>
+      <button class="tab-btn" data-category="CHESTER">Chester</button>
+      <button class="tab-btn" data-category="CURIO">Curio</button>
     </div>
 
-    <!-- Steam Integration (Optional) -->
-    <button id="steam-login" class="steam-btn">
-      <img src="assets/steam-logo.png" alt="Steam"> Sync Achievements
-    </button>
+    <!-- Dynamic Checklist -->
+    <div id="checklist-container"></div>
   </div>
+  <script src="js/data.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
