@@ -305,7 +305,18 @@
       "Weaver's Needle"
     ]
   },
-  "VESSEL": [
-    "Awaken Wine Worm"
-  ]
+  "VESSEL": {
+    "CHAPTER 1:" [
+      "Fireproof Mantle"
+    ],
+    "CHAPTER 2:" [
+      "Wind Tamer"
+    ],
+    "CHAPTER 3:" [
+      "Weaver's Needle"
+    ],
+    "CHAPTER 4:" [
+      "Plantain Fan"
+    ]
+  }
 }
