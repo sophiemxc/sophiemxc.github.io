@@ -1,1 +1,53 @@
+/* Progress Bar */
+.progress-bar {
+  background: #333;
+  border-radius: 10px;
+  height: 20px;
+  margin: 10px 0;
+}
+.progress-fill {
+  background: #f5a623;
+  border-radius: 10px;
+  height: 100%;
+  transition: width 0.5s;
+}
 
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.tab-btn {
+  padding: 10px 20px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tab-btn.active {
+  background: #f5a623;
+}
+
+/* Checklist */
+.chapter {
+  margin: 20px 0;
+}
+.chapter-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.item {
+  padding: 8px;
+  border-bottom: 1px solid #444;
+  display: flex;
+  align-items: center;
+}
+.item input {
+  margin-right: 10px;
+}
+.item.completed {
+  text-decoration: line-through;
+  color: #777;
+}
