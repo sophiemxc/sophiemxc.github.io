@@ -1,4 +1,4 @@
-{
+window.gameData = {
   "ARMOR": {
     "CHAPTER 1": {
       "Arms": [
